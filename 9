@@ -24,7 +24,7 @@ engagement_num_rows = len(daily_engagement)
 print(engagement_num_rows)
 engagement_num_unique_students = set()
 for teenybeeper in daily_engagement:
-    engagement_num_unique_students.add(teenybeeper['account_key'])
+    engagement_num_unique_students.add(teenybeeper['acct'])
 print(len(engagement_num_unique_students))
 
 submission_num_rows =  len(project_submissions)
