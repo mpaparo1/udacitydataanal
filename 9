@@ -16,20 +16,23 @@ project_submissions = read_csv('/datasets/ud170/udacity-students/project_submiss
 enrollment_num_rows = len(enrollments)
 print(enrollment_num_rows)
 enrollment_num_unique_students = set()
-for teenybopper in enrollments:
-    enrollment_num_unique_students.add(teenybopper['account_key'])
-print(len(enrollment_num_unique_students))
+for i in enrollments:
+    enrollment_num_unique_students.add(i['account_key'])
+enrollment_num_unique_students = len(enrollment_num_unique_students)
+print(enrollment_num_unique_students)
 
-engagement_num_rows = len(daily_engagement)       
-print(engagement_num_rows)
+engagement_num_rows = len(daily_engagement)
+print(engagement_num_rows)             
 engagement_num_unique_students = set()
-for teenybeeper in daily_engagement:
-    engagement_num_unique_students.add(teenybeeper['acct'])
-print(len(engagement_num_unique_students))
+for i in daily_engagement:
+    engagement_num_unique_students.add(i['acct'])
+engagement_num_unique_students = len(engagement_num_unique_students)
+print(engagement_num_unique_students)
 
-submission_num_rows =  len(project_submissions)
+submission_num_rows = len(project_submissions) 
 print(submission_num_rows)
 submission_num_unique_students = set()
-for teenybepper in project_submissions:
-    submission_num_unique_students.add(teenybepper['account_key'])
-print(len(submission_num_unique_students))
+for i in project_submissions:
+    submission_num_unique_students.add(i['account_key'])
+submission_num_unique_students = len(submission_num_unique_students)
+print(submission_num_unique_students)
